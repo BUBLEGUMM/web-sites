@@ -10,15 +10,49 @@
     </asp:ContentPlaceHolder>
    
 </head>
-<body>
-    <h1>my project daniel</h1>
+<body style="background-color:white">
+        <style>
+table, th{
+    background-color:beige;
+  border:0px solid black;
+  border-collapse:co
+     
+     
+}
+img{
+    height:100px
+}
+    
+        
+        
+
+
+</style>
+    <center>
+    <table style="width:50%">
+
+        <tr style="height:75px">
+            <th> <a href="page1.aspx">
+                <img src="images/תמונה%20הרשמה.png" /></a> </th>
+            <th> <a href="page2.aspx"><img src="images/תמונה3.png" /></a></th>
+            <th><a href="page3.aspx">link three</a></th>
+            <th><a href="page%204.aspx">link four</a> </th>
+            <th><a href="page%205.aspx">link five</a></th>
+            <th><a href="page%206.aspx">link six</a></th>
+        </tr>
+    
+        </center>
     <form id="form1" runat="server">
     <div>
         <center>
+            <tr>
+                <td>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
       
         </asp:ContentPlaceHolder>
-        
+                    </td>
+            </tr>
+        <table />
     </div>
     </form>
     

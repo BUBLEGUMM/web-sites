@@ -1,12 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="page3.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="page 5.aspx.cs" Inherits="page_5" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-  <%=strkefel %>
-    <header>
-        <body> 
-                <style>
+        <style>
 table, th, td {
   border:1px solid black;
   border-collapse:co
@@ -15,8 +12,5 @@ th, td{
     background-color:
 }
 </style>
-            <h1></h1>
-        </body>
-    </header>
 </asp:Content>
 

@@ -12,12 +12,12 @@ th, td{
     background-color:
 }
 </style>
-    <h1>דף ראשי</h1>
-  <table style="width:50%">
-      <tr>
-          <td><a href="page2.aspx">  <img src="images/תמונה3.png"style="width;200px;height:100px;" /></a></td>
-          <td><a href="page3.aspx">page3</a></td>
-      </tr>
-  </table>
+    <h1>דף הרשמה</h1>
+  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
 </asp:Content>
 
