@@ -5,13 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <style>
-table, th, td {
-  border:1px solid black;
-  border-collapse:co
-}
-th, td{
-    background-color:
-}
+
 
 </style>
     <h1>דף הרשמה</h1>
@@ -25,21 +19,18 @@ th, td{
               שנתיים: <input type="radio" name="check2" value="שנתיים" id="radio_3.0"> <br />
        יותר משנתיים <input type="radio" name="check2" checked value="יותר משנתיים" id="radio_4.0"><br />
          <br />
-        בעל חיים אהוב: 
+        תוכנית אימונים שתרצה : 
         <br />
-        כלב<input type="radio" name="radio1" checked value="כלב" id="radio_1"><br />
-        חתול<input type="radio" name="radio1" value="חתול" id="radio_2"><br />
-        סוס<input type="radio" name="radio1" value="סוס" checked id="radio_3"><br />
-        ארנב<input type="radio" name="radio1" value="ארנב" id="radio_4"><br />
+        full body<input type="radio" name="radio1" checked value="full body" id="radio_1"><br />
+        upper lower<input type="radio" name="radio1" value="upper lower" id="radio_2"><br />
+        anterior posterior<input type="radio" name="radio1" value="anterior posterior" checked id="radio_3"><br />
+        push pull legs<input type="radio" name="radio1" value="push pull legs" id="radio_4"><br />
         תשובה פתוחה:
-        <textarea rows="5" cols="20" name="textarea1" id="textarea1" placeholder="הכנס מלל חופשי"></textarea>
+        <textarea rows="3" cols="20" name="textarea1" id="textarea1" placeholder="הכנס הערה אם יש"></textarea>
         <br />
-        <select name="age" id="age">
-            <option value="0">בחר גיל</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-        </select>
+      <br />
+                <textarea rows="1" cols="10" name="textarea2" id="age" placeholder="הכנס גיל "></textarea>
+           
         <br />
         <input id="Submit1" type="submit" value="שלח" />
 </form>
@@ -47,5 +38,10 @@ th, td{
     <%=name %>
     <br />
     <%=years %>
+    <br />
+    <%=split %>
+    <br />
+    <%=age %>
+
 </asp:Content>
 

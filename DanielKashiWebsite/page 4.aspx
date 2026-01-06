@@ -4,13 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
         <style>
-table, th, td {
-  border:1px solid black;
-  border-collapse:co
-}
-th, td{
-    background-color:
-}
-</style>
+
 </asp:Content>
 

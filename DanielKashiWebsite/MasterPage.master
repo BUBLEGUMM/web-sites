@@ -5,19 +5,23 @@
 <html>
 <head runat="server">
     <title>my project</title>
-    
+    <h1 style="text-align:center">מאמן אישי</h1>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
    
 </head>
 <body style="background-color:white" dir="rtl">
         <style>
-table, th{
+table, th,td{
     background-color:beige;
-  border:0px solid black;
   border-collapse:collapse
-     
-     
+}
+th{
+    background-color:beige;
+    border:1px solid black
+}
+table{
+    height:1000px
 }
 img{
     height:100px
@@ -46,7 +50,8 @@ img{
     <div>
         <center>
             <tr>
-                <td >
+                <td style="vertical-align: top;">
+                    
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
       
         </asp:ContentPlaceHolder>
