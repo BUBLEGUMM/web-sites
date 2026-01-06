@@ -10,12 +10,12 @@
     </asp:ContentPlaceHolder>
    
 </head>
-<body style="background-color:white">
+<body style="background-color:white" dir="rtl">
         <style>
 table, th{
     background-color:beige;
   border:0px solid black;
-  border-collapse:co
+  border-collapse:collapse
      
      
 }
@@ -29,7 +29,7 @@ img{
 
 </style>
     <center>
-    <table style="width:50%">
+    <table style="width:100%">
 
         <tr style="height:75px">
             <th> <a href="page1.aspx">
@@ -46,7 +46,7 @@ img{
     <div>
         <center>
             <tr>
-                <td>
+                <td >
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
       
         </asp:ContentPlaceHolder>
