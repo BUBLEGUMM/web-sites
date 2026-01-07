@@ -20,9 +20,15 @@ th{
     background-color:beige;
     border:1px solid black
 }
-table{
-    height:1000px
+            table {
+                height: 1000px
+            }
+  table{
+  table-layout: fixed;
+  width: 100%;
 }
+
+
 img{
     height:100px
 }
@@ -33,33 +39,34 @@ img{
 
 </style>
     <center>
-    <table style="width:100%">
+    <table style="width:100%"> 
 
         <tr style="height:75px">
-            <th> <a href="page1.aspx">
-                <img src="images/תמונה%20הרשמה.png" /></a> </th>
-            <th> <a href="page2.aspx"><img src="images/תמונה3.png" /></a></th>
-            <th><a href="page3.aspx">link three</a></th>
-            <th><a href="page%204.aspx">link four</a> </th>
-            <th><a href="page%205.aspx">link five</a></th>
-            <th><a href="page%206.aspx">link six</a></th>
+            <th><a href="page1.aspx"><img src="images/הרשמה.jpeg" /></a> </th>
+            <th><a href="page2.aspx"><img src="images/מידע.jpeg" /></a></th>
+            <th><a href="page3.aspx"><img src="images/צור%20קשר.jpeg" /></a></th>
+            <th><a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a> </th>
+            <th><a href="page%205.aspx">
+                <img src="images/מחירון.jpeg" /></a></th>
+            <th><a href="page%206.aspx">
+                <img src="images/אודות.jpeg" /></a></th>
         </tr>
     
         </center>
-    <form id="form1" runat="server">
-    <div>
+    
         <center>
             <tr>
                 <td style="vertical-align: top;">
+                   
                     
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
       
         </asp:ContentPlaceHolder>
                     </td>
             </tr>
-        <table />
-    </div>
-    </form>
+       </table>
+ 
+  
     
 </body>
 </html>

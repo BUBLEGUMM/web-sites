@@ -6,7 +6,8 @@
   
     <header>
         <body> 
-               
+               <h2>you can contact me at 0501234567</h2>
+            <h2>or you can email me at contactme@gmail.com</h2>
             
         </body>
     </header>
