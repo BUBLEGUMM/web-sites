@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class form : System.Web.UI.Page
+public partial class page1 : System.Web.UI.Page
 {
     public string years;
     public string name;
