@@ -9,9 +9,13 @@
 
 </style>
     <h1>דף הרשמה</h1>
-  <form>
-   שם פרטי: <input type="text" name="firstname" id="firstname" placeholder="example">
+  <form runat="server" method="post">
+   שם פרטי: <input type="text" name="firstname" id="firstname" placeholder="jacob oestreicher">
         <br />
+      אימייל: <input type="text" name="gmail" id="gmail" placeholder="example">
+     <br />
+     סיסמא: <input type="text" name="password" id="password" placeholder="example">
+     <br />
         כמה זמן אתה מתאמן 
         <br />
               פחות משנה<input type="radio" name="check2" value="פחות משנה"  id="radio_1.0"><br />
