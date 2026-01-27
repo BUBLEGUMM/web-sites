@@ -10,7 +10,7 @@
 </style>
     <h1>דף הרשמה</h1>
   <form runat="server" method="post">
-   שם פרטי: <input type="text" name="firstname" id="firstname" placeholder="jacob oestreicher">
+   שם פרטי: <input type="text" name="name" id="name" placeholder="exmple">
         <br />
       אימייל: <input type="text" name="gmail" id="gmail" placeholder="example">
      <br />
@@ -18,22 +18,22 @@
      <br />
         כמה זמן אתה מתאמן 
         <br />
-              פחות משנה<input type="radio" name="check2" value="פחות משנה"  id="radio_1.0"><br />
-              שנה: <input type="radio" name="check2" value="שנה" id="radio_2.0"><br />
-              שנתיים: <input type="radio" name="check2" value="שנתיים" id="radio_3.0"> <br />
-       יותר משנתיים <input type="radio" name="check2" checked value="יותר משנתיים" id="radio_4.0"><br />
+              פחות משנה<input type="radio" name="experience" value="פחות משנה"  id="radio_1.0"><br />
+              שנה: <input type="radio" name="experience" value="שנה" id="radio_2.0"><br />
+              שנתיים: <input type="radio" name="experience" value="שנתיים" id="radio_3.0"> <br />
+       יותר משנתיים <input type="radio" name="experience" checked value="יותר משנתיים" id="radio_4.0"><br />
          <br />
         תוכנית אימונים שתרצה : 
         <br />
-        full body<input type="radio" name="radio1" checked value="full body" id="radio_1"><br />
-        upper lower<input type="radio" name="radio1" value="upper lower" id="radio_2"><br />
-        anterior posterior<input type="radio" name="radio1" value="anterior posterior" checked id="radio_3"><br />
-        push pull legs<input type="radio" name="radio1" value="push pull legs" id="radio_4"><br />
+        full body<input type="radio" name="split" checked value="full body" id="radio_1"><br />
+        upper lower<input type="radio" name="split" value="upper lower" id="radio_2"><br />
+        anterior posterior<input type="radio" name="split" value="anterior posterior" checked id="radio_3"><br />
+        push pull legs<input type="radio" name="split" value="push pull legs" id="radio_4"><br />
         תשובה פתוחה:
-        <textarea rows="3" cols="20" name="textarea1" id="textarea1" placeholder="הכנס הערה אם יש"></textarea>
+        <textarea rows="3" cols="20" name="comment" id="textarea1" placeholder="הכנס הערה אם יש"></textarea>
         <br />
       <br />
-                <textarea rows="1" cols="10" name="textarea2" id="age" placeholder="הכנס גיל "></textarea>
+                <textarea rows="1" cols="10" name="age" id="age" placeholder="הכנס גיל "></textarea>
            
         <br />
         <input id="Submit1" type="submit" value="שלח" />

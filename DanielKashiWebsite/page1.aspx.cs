@@ -17,7 +17,7 @@ public partial class page1 : System.Web.UI.Page
     {
         if (IsPostBack)
         {
-            string firstname = Request.Form["name"];
+            string name = Request.Form["name"];
             string password = Request.Form["password"];
             string gmail = Request.Form["gmail"];
             string split = Request.Form["split"];
@@ -25,25 +25,23 @@ public partial class page1 : System.Web.UI.Page
             string experience = Request.Form["experience"];
             string comment= Request.Form["comment"];
             string sqlInsert =
-                "INSERT INTO tUsers " +
-                "VALUES (" +
-                "N'" + firstname + "'," +
-                 age + "," +
-                 "N'" + split + "'," +
-                 "N'" + experience + "'," +
-                 "N'" + comment + "'," +
-                 "N'" + gmail + "'," +
-                 "N'" + password + "'," +
-                
-               
+   "INSERT INTO Tusers (name, age, split, experience, comment, gmail, password) VALUES (" +
+   "N'" + name + "'," +
+   "N'" + age + "'," +
+   "N'" + split + "'," +
+   "N'" + experience + "'," +
+   "N'" + comment + "'," +
+   "N'" + gmail + "'," +
+   "N'" + password + "')";
 
-                ")";
+
+
             MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
             st = "נרשמת בהצלחה!";
-
-            name = "name:" + Request.Form["firstname"];
-            age = "age: " + Request.Form["textarea2"];
-            years = "years of training:" + Request.Form["check2"];
+            
+            name = "name:" + Request.Form["name"];
+            age = "age: " + Request.Form["age"];
+            experience = "years of training:" + Request.Form["check2"];
             split = "split: " + Request.Form["radio1"];
         }
     }   
