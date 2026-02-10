@@ -43,6 +43,7 @@ img{
 
         <tr style="height:75px">
             <th><a href="page1.aspx"><img src="images/הרשמה.jpeg" /></a> </th>
+            <th><a href="login.aspx"><img src="images/התחברות.png" /></a></th>
             <th><a href="page2.aspx"><img src="images/מידע.jpeg" /></a></th>
             <th><a href="page3.aspx"><img src="images/צור%20קשר.jpeg" /></a></th>
             <th><a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a> </th>
@@ -58,13 +59,13 @@ img{
             <tr>
                 <td style="vertical-align: top;">
                    
-                    
+                    <table />
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
       
         </asp:ContentPlaceHolder>
                     </td>
             </tr>
-       </table>
+       <table />
  
   
     

@@ -38,14 +38,7 @@
         <br />
         <input id="Submit1" type="submit" value="שלח" />
 </form>
-    <br />
-    <%=name %>
-    <br />
-    <%=years %>
-    <br />
-    <%=split %>
-    <br />
-    <%=age %>
+    <%=st%>
 
 </asp:Content>
 
