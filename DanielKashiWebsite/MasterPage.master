@@ -21,7 +21,7 @@ th{
     border:1px solid black
 }
             table {
-                height: 1000px
+                height: 100px
             }
   table{
   table-layout: fixed;
@@ -32,7 +32,7 @@ th{
 img{
     height:100px
 }
-    
+ 
         
         
 
@@ -42,15 +42,14 @@ img{
     <table style="width:100%"> 
 
         <tr style="height:75px">
-            <th><a href="page1.aspx"><img src="images/הרשמה.jpeg" /></a> </th>
-            <th><a href="login.aspx"><img src="images/התחברות.png" /></a></th>
-            <th><a href="page2.aspx"><img src="images/מידע.jpeg" /></a></th>
-            <th><a href="page3.aspx"><img src="images/צור%20קשר.jpeg" /></a></th>
-            <th><a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a> </th>
-            <th><a href="page%205.aspx">
-                <img src="images/מחירון.jpeg" /></a></th>
-            <th><a href="page%206.aspx">
-                <img src="images/אודות.jpeg" /></a></th>
+            <td><a href="page1.aspx"><img src="images/הרשמה.jpeg" /></a>     
+            <a href="login.aspx"><img src="images/התחברות.png" /></a>      
+            <a href="page2.aspx"><img src="images/מידע.jpeg" /></a>        
+            <a href="page3.aspx"><img src="images/צור%20קשר.jpeg" /></a>    
+            <a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a>    
+            <a href="page%205.aspx"><img src="images/מחירון.jpeg" /></a>  
+            <a href="page%206.aspx"><img src="images/אודות.jpeg" /></a>  
+       </td> 
         </tr>
     
         </center>

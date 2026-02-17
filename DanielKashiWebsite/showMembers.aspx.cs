@@ -11,9 +11,15 @@ public partial class showMembers : System.Web.UI.Page
     public string st = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        string sql = "SELECT * FROM tUsers";
+        if (Page.IsPostBack) { 
+            string pc = Request.Form["passcheck"];
+            string gc = Request.Form["gmailcheck"];
 
-        DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
+            string sql = "SELECT * FROM tUsers WHERE " +
+                " password='" + pc + "' AND " +
+                "gmail=N'" + gc + "'";
+       
+            DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
 
         if (dt.Rows.Count == 0)
         {
@@ -23,13 +29,13 @@ public partial class showMembers : System.Web.UI.Page
         {
             st += "<table border='1'";
             st += "tr>";
-            st += "<td>שם פרטי</td>";
-            st += "<td>שם משפחה</td>";
+            st += "<th>שם פרטי</th>";
+            st += "<th>גיל</th>";
+            st += "<th>תוכנית</th>";
+            st += "<td>נסיון</td>";
+            st += "<td>הערה</td>";
             st += "<td>מייל</td>";
-            st += "<td>סיסמה</td>";
-            st += "<td>גיל</td>";
-            st += "<td>מגדר</td>";
-            st += "<td>split</td>";
+            st += "<td>סיסמא</td>";
             st += "</tr>";
              for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -42,5 +48,8 @@ public partial class showMembers : System.Web.UI.Page
             }
             st += "</table>";
         }
-    }
+    
+        }
+   }
+
 }

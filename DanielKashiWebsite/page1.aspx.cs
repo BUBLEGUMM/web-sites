@@ -13,6 +13,7 @@ public partial class page1 : System.Web.UI.Page
     public string name;
     public string age;
     public string split;
+    public string gmail;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (IsPostBack)
@@ -25,7 +26,7 @@ public partial class page1 : System.Web.UI.Page
             string experience = Request.Form["experience"];
             string comment = Request.Form["comment"];
             string sqlCheck =
-            "SELECT * FROM tUsers WHERE Email=N'" + gmail + "'";
+            "SELECT * FROM tUsers WHERE gmail=N'" + gmail + "'";
 
             bool usersExists = MyAdoHelper.IsExist(sqlCheck);
             if (usersExists)
