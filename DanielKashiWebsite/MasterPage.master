@@ -10,8 +10,9 @@
     </asp:ContentPlaceHolder>
    
 </head>
-<body style="background-color:white" dir="rtl">
+<body style="background-color:beige" dir="rtl">
         <style>
+            
 table, th,td{
     background-color:beige;
   border-collapse:collapse

@@ -16,8 +16,8 @@ public partial class showMembers : System.Web.UI.Page
             string gc = Request.Form["gmailcheck"];
 
             string sql = "SELECT * FROM tUsers WHERE " +
-                " password='" + pc + "' AND " +
-                "gmail=N'" + gc + "'";
+                " password LIKE N'%" + pc + "%' AND " +
+                "gmail LIKE N'%" + gc + "%'";
        
             DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
 
@@ -28,7 +28,7 @@ public partial class showMembers : System.Web.UI.Page
         else
         {
             st += "<table border='1'";
-            st += "tr>";
+            st += "<tr>";
             st += "<th>שם פרטי</th>";
             st += "<th>גיל</th>";
             st += "<th>תוכנית</th>";
