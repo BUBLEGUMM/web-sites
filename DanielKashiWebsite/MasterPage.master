@@ -50,7 +50,10 @@ img{
             <a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a>    
             <a href="page%205.aspx"><img src="images/מחירון.jpeg" /></a>  
             <a href="page%206.aspx"><img src="images/אודות.jpeg" /></a>  
+            <a href="workout%20log.aspx"><img src="images/שמירת%20אימונים.png" /></a>
+            <a href="show%20workouts.aspx"><img src="images/בדיקת%20אימונים.png" /></a>
        </td> 
+
         </tr>
     
         </center>
