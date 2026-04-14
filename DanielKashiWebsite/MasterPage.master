@@ -1,76 +1,78 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html>
-<head runat="server">
-    <title>my project</title>
-    <h1 style="text-align:center">מאמן אישי</h1>
-    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <html>
+    <head runat="server">
+        <title>my project</title>
+        <h1 style="text-align:center">מאמן אישי</h1>
+        <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
    
-</head>
-<body style="background-color:beige" dir="rtl">
-        <style>
+    </head>
+    <body style="background-color:beige" dir="rtl">
+         <h1>  שלום <%=Session["username"] %></h1>
+
+            <style>
             
-table, th,td{
-    background-color:beige;
-  border-collapse:collapse
-}
-th{
-    background-color:beige;
-    border:1px solid black
-}
-            table {
-                height: 100px
-            }
-  table{
-  table-layout: fixed;
-  width: 100%;
-}
+    table, th,td{
+        background-color:beige;
+      border-collapse:collapse
+    }
+    th{
+        background-color:beige;
+        border:1px solid black
+    }
+                table {
+                    height: 100px
+                }
+      table{
+      table-layout: fixed;
+      width: 100%;
+    }
 
 
-img{
-    height:100px
-}
+    img{
+        height:100px
+    }
  
         
         
 
 
-</style>
-    <center>
-    <table style="width:100%"> 
-
-        <tr style="height:75px">
-            <td><a href="page1.aspx"><img src="images/הרשמה.jpeg" /></a>     
-            <a href="login.aspx"><img src="images/התחברות.png" /></a>      
-            <a href="page2.aspx"><img src="images/מידע.jpeg" /></a>        
-            <a href="page3.aspx"><img src="images/צור%20קשר.jpeg" /></a>    
-            <a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a>    
-            <a href="page%205.aspx"><img src="images/מחירון.jpeg" /></a>  
-            <a href="page%206.aspx"><img src="images/אודות.jpeg" /></a>  
-            <a href="workout%20log.aspx"><img src="images/שמירת%20אימונים.png" /></a>
-            <a href="show%20workouts.aspx"><img src="images/בדיקת%20אימונים.png" /></a>
-       </td> 
-
-        </tr>
-    
-        </center>
-    
+    </style>
         <center>
-            <tr>
-                <td style="vertical-align: top;">
-                   
-                    <table />
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-      
-        </asp:ContentPlaceHolder>
-                    </td>
+        <table style="width:100%"> 
+
+            <tr style="height:75px">
+                <td><a href="page1.aspx"><img src="images/הרשמה.jpeg" /></a>     
+                <a href="login.aspx"><img src="images/התחברות.png" /></a>      
+                <a href="page2.aspx"><img src="images/מידע.jpeg" /></a>        
+                <a href="page3.aspx"><img src="images/צור%20קשר.jpeg" /></a>    
+                <a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a>    
+                <a href="page%205.aspx"><img src="images/מחירון.jpeg" /></a>  
+                <a href="page%206.aspx"><img src="images/אודות.jpeg" /></a>  
+                <a href="workout%20log.aspx"><img src="images/שמירת%20אימונים.png" /></a>
+                <a href="show%20workouts.aspx"><img src="images/בדיקת%20אימונים.png" /></a>
+           </td> 
+
             </tr>
-       <table />
+    
+            </center>
+    
+            <center>
+                <tr>
+                    <td style="vertical-align: top;">
+                   
+                        <table />
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+      
+            </asp:ContentPlaceHolder>
+                        </td>
+                </tr>
+           <table />
  
   
     
-</body>
-</html>
+    </body>
+    </html>
