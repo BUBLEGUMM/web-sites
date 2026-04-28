@@ -18,6 +18,7 @@ public partial class login : System.Web.UI.Page
 
             if (email == "manager@gmail.com" && pass == "manager1234")
             {
+                Session["nihol"] = "ok";
                 Session["username"] = "מנהל דניאל";
                 Response.Redirect("showMembers.aspx");
             }
@@ -29,9 +30,9 @@ public partial class login : System.Web.UI.Page
                     "WHERE gmail = '" + email + "' " +
                     "AND password = '" + pass + "'";
 
-                bool userExits = MyAdoHelper.IsExist(sql);
+               System.Data.DataTable dt= MyAdoHelper.ExecuteDataTable(sql);
 
-                if (!userExits)
+                if (dt.Rows.Count == 0)
                 {
                     Session["username"] = "אורח";
 
@@ -39,7 +40,8 @@ public partial class login : System.Web.UI.Page
                 }
                 else
                 {
-                    Session["username"] = "רשום";
+                    Session["user"]= "ok";
+                    Session["name"] = dt.Rows[0]["name"];
 
                     Response.Redirect("page2.aspx");
                 }

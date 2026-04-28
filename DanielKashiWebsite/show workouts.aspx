@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1>show memebers</h1>
+    <h1>show workouts</h1>
        <form runat="server" method="post">
 
    תאריך: <input type="text" name="DateCheck" id="DateCheck" placeholder="exmple">
