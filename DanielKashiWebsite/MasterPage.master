@@ -1,109 +1,121 @@
-﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
-    <html>
-    <head runat="server">
-        <title>my project</title>
-        <h1 style="text-align:center">מאמן אישי</h1>
-        <asp:ContentPlaceHolder id="head" runat="server">
-        </asp:ContentPlaceHolder>
-   
-    </head>
-    <body style="background-color:beige" dir="rtl">
-         <h1>  שלום <%=Session["name"] %></h1>
+<html>
+<head runat="server">
+    <title>my project</title>
+    <h1 style="text-align:center">מאמן אישי</h1>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder></head><body style="background-color:#f4f3ef" dir="rtl"> 
+    
+    <!-- התיקון כאן: מציג את השם מה-Session, ואם הוא ריק, מציג "אורח" -->
+    <h1>שלום <%= (Session["name"] != null && Session["name"].ToString() != "") ? Session["name"] : "אורח" %></h1>
 
-            <style>
-            
-    table, th,td{
-        background-color:beige;
-      border-collapse:collapse
-    }
-    th{
-        background-color:beige;
-        border:1px solid black
-    }
-                table {
-                    height: 100px
-                }
-      table{
-      table-layout: fixed;
-      width: 100%;
-    }
+        <style>
+        /* 1. עיצוב כללי של הדף והטקסט */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
 
+        h1 {
+            color: #1a252f; /* כחול-כהה עמוק במקום שחור מוחלט */
+            font-weight: 700;
+        }
 
-    img{
-        height:100px
-    }
- 
+        /* 2. שדרוג הטבלה - הפיכתה לבלתי נראית כדי שתשמש רק כרשת סידור */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 15px; /* מייצר רווח אסתטי בין הכפתורים */
+            table-layout: fixed;
+            height: 100px;
+        }
+
+        /* ביטול הגבולות והצבעים הישנים */
+        table, th, td {
+            background-color: transparent !important;
+            border: none !important;
+        }
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* 3. עיצוב תמונות התפריט - הפיכתן לכפתורים יוקרתיים */
+        img {
+            height: 65px; /* גובה אחיד ואלגנטי לתפריט */
+            width: auto;
+            object-fit: contain;
+            border-radius: 50px; /* פינות עגולות לחלוטין - מראה מודרני */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* צל רך שנותן עומק */
+            transition: all 0.3s ease; /* אנימציה חלקה לחוויית משתמש */
+        }
+
+        /* 4. אפקט אינטראקטיבי מדהים בעת מעבר עכבר */
+        img:hover {
+            transform: translateY(-5px); /* הכפתור קופץ מעט למעלה */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* הצל נהיה עמוק יותר */
+            filter: brightness(1.1); /* התמונה נהיית מעט מוארת יותר */
+        }
+        </style>
         
-        
+    <center>
+    <table style="width:100%"> 
 
+        <tr style="height:75px">
+            <td>
+             <%if (Session["nihol"] != "ok" && Session["user"] != "ok")
+                 {  %><a href="signup.aspx"><img src="images/הרשמה.jpeg" /></a> <%}%>
+             <%if (Session["nihol"] != "ok" && Session["user"] != "ok")
+                 { %>
+                <a href="login.aspx"><img src="images/התחברות.png" /></a>                     <%} %>  
+                
+            <a href="information.aspx"><img src="images/מידע.jpeg" /></a>  
+             
+            <a href="home.aspx"> <img src="images/בית.jpeg" /></a>
+               
+            <a href="contact.aspx"><img src="images/צור%20קשר.jpeg" /></a>  
 
-    </style>
-        <center>
-        <table style="width:100%"> 
-
-            <tr style="height:75px">
-                <td>
-                 <%if (Session["nihol"] != "ok" && Session["user"] != "ok")
-                     {  %><a href="signup.aspx"><img src="images/הרשמה.jpeg" /></a> <%}
-
-
-
-%>
-                 <%if (Session["nihol"] != "ok" && Session["user"] != "ok")
-                     { %>
-                <a href="login.aspx"> <img src="images/התחברות.png" /></a>   <%} %>  
-                    
-                <a href="information.aspx"><img src="images/מידע.jpeg" /></a>  
-                 
-                <a href="home.aspx"> <img src="images/בית.jpeg" /></a>
-                   
-                <a href="contact.aspx"><img src="images/צור%20קשר.jpeg" /></a>  
-
+            <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
+                { %>
+            <a href="exercises.aspx"><img src="images/תרגילים.jpeg" /></a> <% }%>
+                
+            <a href="pricing.aspx"><img src="images/מחירון.jpeg" /></a> 
+                
+            <a href="about.aspx"><img src="images/אודות.jpeg" /></a>  
+               
                 <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
-                    { %>
-                <a href="exercises.aspx"><img src="images/תרגילים.jpeg" /></a> <% }%>
-                    
-                <a href="pricing.aspx"><img src="images/מחירון.jpeg" /></a> 
-                    
-                <a href="about.aspx"><img src="images/אודות.jpeg" /></a>  
-                   
-                    <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
-                        {  %>
-                <a href="workout%20log.aspx"><img src="images/שמירת%20אימונים.png" /></a> <%} %>
-                   
-                    <%if (Session["nihol"] == "ok" || Session["user"] == "ok"){  %>
-                <a href="show%20workouts.aspx"><img src="images/בדיקת%20אימונים.png" /></a> <%} %>
-                   
-                    <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
-                        {  %>
-                <a href="logout.aspx"><img src="images/התנתקות.png" /></a> <%}
+                    {  %>
+            <a href="workout%20log.aspx"><img src="images/שמירת%20אימונים.png" /></a> <%} %>
+               
+                <%if (Session["nihol"] == "ok" || Session["user"] == "ok"){  %>
+            <a href="show%20workouts.aspx"><img src="images/בדיקת%20אימונים.png" /></a> <%} %>
+               
+                <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
+                    {  %>
+            <a href="logout.aspx"><img src="images/התנתקות.png" /></a> <%}%>
+                <%if (Session["nihol"] == "ok")
+                    {  %>
+                <a href="showMembers.aspx"><img src="images/הצגת%20משתמשים.png" /></a><%} %>
+       </td> 
 
-%>
-                    <%if (Session["nihol"] == "ok")
-                        {  %>
-                    <a href="showMembers.aspx"><img src="images/הצגת%20משתמשים.png" /></a><%} %>
-           </td> 
+        </tr>
 
-            </tr>
-    
-            </center>
-    
-            <center>
-                <tr>
-                    <td style="vertical-align: top;">
-                   
-                        <table />
-            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-      
-            </asp:ContentPlaceHolder>
-                        </td>
-                </tr>
-           <table />
- 
+        </center>
+
+        <center>
+            <tr>
+                <td style="vertical-align: top;">
+               
+                    <table />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
   
-    
-    </body>
-    </html>
+        </asp:ContentPlaceHolder>
+                    </td>
+            </tr>
+       <table /></body></html>
