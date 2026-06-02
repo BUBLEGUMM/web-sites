@@ -13,22 +13,26 @@
 זמן: <input type="text" name="time" id="time" placeholder="">
 
     <br />
-
+      <br />
 אורך זמן האימון: <input type="text" name="length" id="length" placeholder="one hour">
 
-    <br />
+    <br />      <br />
+
 
 תאריך האימון: <input type="text" name="date" id="date" placeholder="">
 
-    <br />
+    <br />       <br />
+
 
 סוג האימון: <input type="text" name="type" id="type" placeholder=""> 
 
-    <br />
+    <br />      <br />
+
 
 תרגילים: <input type="text" name="exercises" id="exercises" placeholder="">
 
-    <br />
+    <br />      <br />
+
 
         <input id="Submit1" type="submit" value="שמור" />
 </form>

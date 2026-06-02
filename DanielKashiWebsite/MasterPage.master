@@ -47,26 +47,28 @@
             <tr style="height:75px">
                 <td>
                  <%if (Session["nihol"] != "ok" && Session["user"] != "ok")
-                     {  %><a href="page1.aspx"><img src="images/הרשמה.jpeg" /></a> <%}
+                     {  %><a href="signup.aspx"><img src="images/הרשמה.jpeg" /></a> <%}
 
 
 
 %>
                  <%if (Session["nihol"] != "ok" && Session["user"] != "ok")
                      { %>
-                <a href="login.aspx"><img src="images/התחברות.png" /></a>   <%} %>  
+                <a href="login.aspx"> <img src="images/התחברות.png" /></a>   <%} %>  
                     
-                <a href="page2.aspx"><img src="images/מידע.jpeg" /></a>   
+                <a href="information.aspx"><img src="images/מידע.jpeg" /></a>  
+                 
+                <a href="home.aspx"> <img src="images/בית.jpeg" /></a>
                    
-                <a href="page3.aspx"><img src="images/צור%20קשר.jpeg" /></a>  
+                <a href="contact.aspx"><img src="images/צור%20קשר.jpeg" /></a>  
 
                 <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
                     { %>
-                <a href="page%204.aspx"><img src="images/תרגילים.jpeg" /></a> <% }%>
+                <a href="exercises.aspx"><img src="images/תרגילים.jpeg" /></a> <% }%>
                     
-                <a href="page%205.aspx"><img src="images/מחירון.jpeg" /></a> 
+                <a href="pricing.aspx"><img src="images/מחירון.jpeg" /></a> 
                     
-                <a href="page%206.aspx"><img src="images/אודות.jpeg" /></a>  
+                <a href="about.aspx"><img src="images/אודות.jpeg" /></a>  
                    
                     <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
                         {  %>
@@ -77,12 +79,12 @@
                    
                     <%if (Session["nihol"] == "ok" || Session["user"] == "ok")
                         {  %>
-                <a href="logout.aspx">< התנתקות/></a> <%}
+                <a href="logout.aspx"><img src="images/התנתקות.png" /></a> <%}
 
 %>
                     <%if (Session["nihol"] == "ok")
                         {  %>
-                    <a href="showMembers.aspx">showMembers</a><%} %>
+                    <a href="showMembers.aspx"><img src="images/הצגת%20משתמשים.png" /></a><%} %>
            </td> 
 
             </tr>
