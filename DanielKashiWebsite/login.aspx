@@ -68,7 +68,6 @@
             background-color: #2980b9;
         }
 
-        /* עיצוב אדום ובולט להודעת השגיאה */
         .error-message {
             display: block;
             text-align: center;
@@ -103,7 +102,6 @@
             
             <input id="submit1" type="submit" value="התחברות" class="btn-submit" />
             
-            <!-- הצגת הודעת השגיאה רק אם המשתנה st אינו ריק -->
             <% if (!string.IsNullOrEmpty(st)) { %>
                 <span class="error-message"><%= st %></span>
             <% } %>

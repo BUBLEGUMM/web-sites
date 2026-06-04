@@ -4,7 +4,7 @@
     <script language="javascript">
         function checkAll() {
             document.getElementById("nameErr").innerHTML = "";
-            document.getElementById("emailErr").innerHTML = ""; // תוקן מ-gmailErr כדי להתאים ל-id ב-HTML
+            document.getElementById("emailErr").innerHTML = ""; 
             document.getElementById("passErr").innerHTML = "";
 
             result = true;
@@ -66,7 +66,6 @@
     </script>
 
     <style>
-        /* מכולה מרכזית מעוצבת לטופס הרשמה */
         .signup-container {
             max-width: 500px;
             margin: 30px auto;
@@ -86,7 +85,6 @@
             font-weight: bold;
         }
 
-        /* קבוצת שדה אסתטית */
         .form-group {
             margin-bottom: 20px;
         }
@@ -99,7 +97,6 @@
             font-size: 0.95rem;
         }
 
-        /* שדות טקסט, גיל והערות */
         .form-control {
             width: 100%;
             padding: 11px 15px;
@@ -118,7 +115,6 @@
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
         }
 
-        /* כותרות סעיפי בחירה (רדיו) */
         .section-label {
             font-weight: 600;
             color: #1a252f;
@@ -129,7 +125,6 @@
             padding-bottom: 5px;
         }
 
-        /* עיצוב אופציות הרדיו */
         .radio-group {
             margin-bottom: 15px;
         }
@@ -143,13 +138,12 @@
         }
 
         .radio-option input[type="radio"] {
-            margin-left: 10px; /* רווח נכון לעברית מימין לשמאל */
+            margin-left: 10px; 
             cursor: pointer;
             width: 16px;
             height: 16px;
         }
 
-        /* עיצוב שגיאות ה-JavaScript */
         .error-text {
             color: #e74c3c;
             font-size: 0.85rem;
@@ -158,10 +152,9 @@
             margin-top: 5px;
         }
 
-        /* כפתור שליחה גדול ומזמין */
         .btn-signup {
             width: 100%;
-            background-color: #2ecc71; /* ירוק התחלה והרשמה */
+            background-color: #2ecc71; 
             color: white;
             border: none;
             padding: 13px;
@@ -181,7 +174,6 @@
             transform: scale(0.99);
         }
 
-        /* הודעת סטטוס מהשרת st */
         .server-status {
             display: block;
             text-align: center;
@@ -231,7 +223,7 @@
                     <input type="radio" name="experience" value="שנה" id="radio_2.0"> שנה
                 </label>
                 <label class="radio-option">
-                    <input type="radio" name="experience" value="שנתיים" id="radio_3.0"> שנתיים
+                   // <input type="radio" name="experience" value="שנתיים" id="radio_3.0"> שנתיים
                 </label>
                 <label class="radio-option">
                     <input type="radio" name="experience" checked value="יותר משנתיים" id="radio_4.0"> יותר משנתיים

@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
-        /* עיצוב המכולה המרכזית של אודות */
         .about-container {
             max-width: 800px;
             margin: 0 auto;
@@ -10,7 +9,6 @@
             text-align: right;
         }
 
-        /* כותרת הדף */
         .about-title {
             text-align: center;
             color: #1a252f;
@@ -19,7 +17,6 @@
             position: relative;
         }
 
-        /* קו תחתון דקורטיבי לכותרת */
         .about-title::after {
             content: '';
             display: block;
@@ -30,7 +27,6 @@
             border-radius: 2px;
         }
 
-        /* פסקאות הטקסט */
         .about-text {
             font-size: 1.2rem;
             line-height: 1.8;
@@ -38,13 +34,11 @@
             margin-bottom: 20px;
         }
 
-        /* הדגשות */
         .highlight {
             color: #3498db;
             font-weight: bold;
         }
 
-        /* בלוק סיכום/אני מאמין */
         .vision-box {
             background-color: #f8fafc;
             border-right: 5px solid #3498db;

@@ -2,9 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
-        /* אזור הבאנר הראשי - Hero Section */
         .hero-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* רקע מדורג כחול ספורטיבי */
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
             color: white;
             text-align: center;
             padding: 60px 20px;
@@ -14,7 +13,7 @@
         }
 
         .hero-section h1 {
-            color: #ffffff !important; /* דריסת הצבע הכהה מהמאסטר פייג' */
+            color: #ffffff !important; 
             font-size: 2.8rem;
             margin-bottom: 15px;
             font-weight: 700;
@@ -29,10 +28,9 @@
             line-height: 1.6;
         }
 
-        /* כפתור הנעה לפעולה גדול */
         .cta-button {
             display: inline-block;
-            background-color: #2ecc71; /* ירוק בולט ומניע לפעולה */
+            background-color: #2ecc71;
             color: white;
             text-decoration: none;
             padding: 14px 35px;
@@ -49,7 +47,6 @@
             box-shadow: 0 6px 15px rgba(46, 204, 113, 0.4);
         }
 
-        /* כותרת משנית ליתרונות */
         .section-title {
             text-align: center;
             color: #1a252f;
@@ -58,7 +55,6 @@
             font-weight: 700;
         }
 
-        /* עיצוב כרטיסי היתרונות */
         .features-card {
             background-color: #ffffff;
             border-radius: 12px;
@@ -97,7 +93,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <!-- אזור ראשי שיווקי ומזמין -->
     <div class="hero-section">
         <h1>הגיע הזמן להשקיע בעצמך</h1>
         <p>ברוכים הבאים לפלטפורמה הרשמית להזמנת אימוני כושר אישיים ומעקב מתקדם. יחד נבנה את הגרסה הכי חזקה, בריאה וחטובה שלכם!</p>
@@ -106,10 +101,9 @@
 
     <h2 class="section-title">מה תקבלו באתר שלי?</h2>
 
-    <!-- שימוש בטבלה השקופה לסידור 3 היתרונות בשורה אחת -->
     <table style="width: 100%; border-collapse: separate; border-spacing: 20px; table-layout: fixed;">
         <tr>
-            <!-- יתרון 1 -->
+
             <td>
                 <div class="features-card">
                     <span class="feature-icon">💪</span>
@@ -118,7 +112,6 @@
                 </div>
             </td>
 
-            <!-- יתרון 2 -->
             <td>
                 <div class="features-card">
                     <span class="feature-icon">📱</span>
@@ -127,7 +120,6 @@
                 </div>
             </td>
 
-            <!-- יתרון 3 -->
             <td>
                 <div class="features-card">
                     <span class="feature-icon">📞</span>

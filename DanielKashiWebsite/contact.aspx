@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
-        /* מכולה מרכזית לפרטי הקשר */
         .contact-box {
             max-width: 500px;
             margin: 60px auto;
@@ -14,7 +13,6 @@
             text-align: right;
         }
 
-        /* כותרת דף */
         .contact-title {
             text-align: center;
             color: #1a252f;
@@ -30,7 +28,6 @@
             font-size: 1.1rem;
         }
 
-        /* עיצוב שורות המידע */
         .contact-item {
             font-size: 1.3rem;
             color: #2c3e50;
@@ -40,7 +37,7 @@
             padding: 15px;
             background-color: #f8fafc;
             border-radius: 10px;
-            border-right: 5px solid #3498db; /* פס כחול בצד ימין */
+            border-right: 5px solid #3498db; 
         }
 
         .contact-item:last-child {
@@ -49,10 +46,9 @@
 
         .contact-icon {
             font-size: 1.8rem;
-            margin-left: 15px; /* רווח נכון לעברית */
+            margin-left: 15px; 
         }
 
-        /* עיצוב הקישורים */
         .contact-item a {
             color: #3498db;
             text-decoration: none;

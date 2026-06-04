@@ -1,8 +1,8 @@
-﻿<%@ Page Title="מידע על תוכניות אימון ותרגילים" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="information.aspx.cs" Inherits="Default2" %>
+﻿
+<%@ Page Title="מידע על תוכניות אימון ותרגילים" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="information.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
-        /* עיצוב כללי של עמוד המידע */
         .info-container {
             max-width: 1000px;
             margin: 0 auto;
@@ -33,7 +33,6 @@
             margin-bottom: 20px;
         }
 
-        /* גריד לכרטיסי המידע */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -41,13 +40,12 @@
             margin-bottom: 30px;
         }
 
-        /* עיצוב כרטיס בודד */
         .info-card {
             background-color: #ffffff;
             border-radius: 12px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border-top: 4px solid #3498db; /* פס עליון כחול ספורטיבי */
+            border-top: 4px solid #3498db; 
             transition: transform 0.3s ease;
         }
 
@@ -69,7 +67,6 @@
             margin: 0;
         }
 
-        /* עיצוב חלק התרגילים המשותף */
         .exercise-table {
             width: 100%;
             border-collapse: collapse;
@@ -188,5 +185,4 @@
         </table>
 
     </div>
-
 </asp:Content>

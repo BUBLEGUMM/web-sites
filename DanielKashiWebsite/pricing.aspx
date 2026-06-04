@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
-        /* כותרת עמוד המחירון */
         .pricing-title {
             text-align: center;
             color: #1a252f;
@@ -17,7 +16,6 @@
             font-size: 1.1rem;
         }
 
-        /* עיצוב כרטיסי המחיר */
         .price-card {
             background-color: #ffffff;
             border-radius: 15px;
@@ -28,14 +26,12 @@
             border: 1px solid #e2e8f0;
         }
 
-        /* אפקט ריחוף על כרטיס המחירון */
         .price-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
             border-color: #3498db;
         }
 
-        /* כותרת מסלול */
         .plan-name {
             font-size: 1.5rem;
             color: #2c3e50;
@@ -43,10 +39,9 @@
             font-weight: bold;
         }
 
-        /* תצוגת המחיר */
         .plan-price {
             font-size: 2.5rem;
-            color: #3498db; /* כחול ספורטיבי מוביל */
+            color: #3498db; 
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -56,7 +51,6 @@
             color: #95a5a6;
         }
 
-        /* רשימת מה שכלול במסלול */
         .features-list {
             list-style: none;
             padding: 0;
@@ -72,16 +66,14 @@
             padding-right: 20px;
         }
 
-        /* אייקון וי קטן ליד כל סעיף */
         .features-list li::before {
             content: "✓";
             position: absolute;
             right: 0;
-            color: #2ecc71; /* ירוק לסימון חיובי */
+            color: #2ecc71; 
             font-weight: bold;
         }
 
-        /* כפתור רכישה/הרשמה מדומה */
         .buy-button {
             display: inline-block;
             background-color: #3498db;
@@ -97,7 +89,6 @@
             background-color: #2980b9;
         }
 
-        /* הדגשת המסלול הפופולרי */
         .featured-card {
             border: 2px solid #3498db;
             background-color: #fcfdfd;
@@ -157,5 +148,4 @@
             </td>
         </tr>
     </table>
-
 </asp:Content>
