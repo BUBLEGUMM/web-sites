@@ -223,7 +223,7 @@
                     <input type="radio" name="experience" value="שנה" id="radio_2.0"> שנה
                 </label>
                 <label class="radio-option">
-                   // <input type="radio" name="experience" value="שנתיים" id="radio_3.0"> שנתיים
+                    <input type="radio" name="experience" value="שנתיים" id="radio_3.0"> שנתיים
                 </label>
                 <label class="radio-option">
                     <input type="radio" name="experience" checked value="יותר משנתיים" id="radio_4.0"> יותר משנתיים
