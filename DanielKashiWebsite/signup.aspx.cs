@@ -27,7 +27,7 @@ public partial class page1 : System.Web.UI.Page
             string experience = Request.Form["experience"];
             string comment = Request.Form["comment"];
 
-            // בדיקה האם המשתמש כבר קיים במערכת לפי האימייל
+        
             string sqlCheck = "SELECT * FROM tUsers WHERE gmail=N'" + gmail + "'";
             bool usersExists = MyAdoHelper.IsExist(sqlCheck);
 
@@ -37,7 +37,7 @@ public partial class page1 : System.Web.UI.Page
             }
             else
             {
-                // יצירת שאילתת ההכנסה למסד הנתונים
+                
                 string sqlInsert =
                    "INSERT INTO Tusers (name, age, split, experience, comment, gmail, password) VALUES (" +
                    "N'" + name + "'," +
@@ -48,18 +48,18 @@ public partial class page1 : System.Web.UI.Page
                    "N'" + gmail + "'," +
                    "N'" + password + "')";
 
-                // הרצת השאילתה ושמירת המשתמש
+               
                 MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
 
-                // העברה אוטומטית לדף ההתחברות מיד לאחר הרישום המוצלח!
+                
                 Response.Redirect("login.aspx");
             }
 
-            // השורות הבאות נשמרו למקרה שהן בשימוש באתר, אך שים לב שבזמן רישום מוצלח ה-Redirect יתבצע לפני הגעה אליהן
+            
             name = "name:" + Request.Form["name"];
             age = "age: " + Request.Form["age"];
-            experience = "years of training:" + Request.Form["experience"]; // תוקן מ-check2 ל-experience כדי להתאים לשדות הטופס שלך
-            split = "split: " + Request.Form["split"]; // תוקן מ-radio1 ל-split כדי להתאים לשדות הטופס שלך
+            experience = "years of training:" + Request.Form["experience"]; 
+            split = "split: " + Request.Form["split"]; 
         }
     }
 }

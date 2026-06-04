@@ -9,11 +9,9 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder></head><body style="background-color:#f4f3ef" dir="rtl"> 
     
-    <!-- התיקון כאן: מציג את השם מה-Session, ואם הוא ריק, מציג "אורח" -->
     <h1>שלום <%= (Session["name"] != null && Session["name"].ToString() != "") ? Session["name"] : "אורח" %></h1>
 
         <style>
-        /* 1. עיצוב כללי של הדף והטקסט */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333333;
@@ -22,20 +20,18 @@
         }
 
         h1 {
-            color: #1a252f; /* כחול-כהה עמוק במקום שחור מוחלט */
+            color: #1a252f; 
             font-weight: 700;
         }
 
-        /* 2. שדרוג הטבלה - הפיכתה לבלתי נראית כדי שתשמש רק כרשת סידור */
         table {
             width: 100%;
             border-collapse: separate;
-            border-spacing: 15px; /* מייצר רווח אסתטי בין הכפתורים */
+            border-spacing: 15px; 
             table-layout: fixed;
             height: 100px;
         }
 
-        /* ביטול הגבולות והצבעים הישנים */
         table, th, td {
             background-color: transparent !important;
             border: none !important;
@@ -46,22 +42,19 @@
             vertical-align: middle;
         }
 
-        /* 3. עיצוב תמונות התפריט - הפיכתן לכפתורים יוקרתיים */
         img {
-            height: 65px; /* גובה אחיד ואלגנטי לתפריט */
+            height: 65px; 
             width: auto;
             object-fit: contain;
-            border-radius: 50px; /* פינות עגולות לחלוטין - מראה מודרני */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* צל רך שנותן עומק */
-            transition: all 0.3s ease; /* אנימציה חלקה לחוויית משתמש */
+            border-radius: 50px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+            transition: all 0.3s ease; 
         }
 
-        /* 4. אפקט אינטראקטיבי מדהים בעת מעבר עכבר */
         img:hover {
-            transform: translateY(-5px); /* הכפתור קופץ מעט למעלה */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* הצל נהיה עמוק יותר */
-            filter: brightness(1.1); /* התמונה נהיית מעט מוארת יותר */
-        }
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); 
+            filter: brightness(1.1); 
         </style>
         
     <center>
